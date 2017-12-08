@@ -1,5 +1,5 @@
 import moment from 'moment';
-import Pikaday from 'pikaday';
+import pikaday from 'pikaday';
 import 'pikaday/css/pikaday.css';
 import {addClass, outerHeight} from './../helpers/dom/element';
 import {deepExtend} from './../helpers/object';
@@ -7,6 +7,8 @@ import EventManager from './../eventManager';
 import {isMetaKey} from './../helpers/unicode';
 import {stopPropagation} from './../helpers/dom/event';
 import TextEditor from './textEditor';
+
+const Pikaday = pikaday(moment);
 
 /**
  * @private
@@ -148,7 +150,8 @@ class DateEditor extends TextEditor {
     this.datePickerStyle.top = `${window.pageYOffset + offset.top + outerHeight(this.TD)}px`;
     this.datePickerStyle.left = `${window.pageXOffset + offset.left}px`;
 
-    this.$datePicker._onInputFocus = function() {};
+    this.$datePicker._onInputFocus = function () {
+    };
     datePickerConfig.format = dateFormat;
 
     if (this.originalValue) {

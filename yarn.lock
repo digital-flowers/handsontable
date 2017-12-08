@@ -3687,10 +3687,6 @@ moment@2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
-moment@2.x:
-  version "2.19.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.19.3.tgz#bdb99d270d6d7fda78cc0fbace855e27fe7da69f"
-
 ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
@@ -4108,11 +4104,9 @@ pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
 
-pikaday@^1.6.1:
+"pikaday@https://github.com/digital-flowers/Pikaday":
   version "1.6.1"
-  resolved "https://registry.yarnpkg.com/pikaday/-/pikaday-1.6.1.tgz#b91bcb9b8539cedd8d6d08e4e7465e12095671b0"
-  optionalDependencies:
-    moment "2.x"
+  resolved "https://github.com/digital-flowers/Pikaday#479bb9f6d8d92ff995c1325997d4de3627424f2f"
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
